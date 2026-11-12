@@ -2,6 +2,8 @@
 
 > 一键回到 DeepSeek Harness 会话的最顶部。自动加载全部「更早」，不用再反复点。
 
+[简体中文](./README.md) | [English](./README.en.md)
+
 ![DSH](https://img.shields.io/badge/DSH-0.2.x-4B6BFB)
 ![platform](https://img.shields.io/badge/platform-web-2ea44f)
 ![license](https://img.shields.io/badge/license-MIT-blue)
@@ -110,7 +112,8 @@ dsh-jump-top/
 │   └── index.js       # 空的服务端入口，仅供 bundle patch 加载
 ├── cordis.patch.yml   # 把插件插入 profile
 ├── package.json
-└── README.md
+├── README.md          # 中文
+└── README.en.md       # English
 ```
 
 修改 `lib/client.js` 后：
