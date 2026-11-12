@@ -1,0 +1,48 @@
+{
+  "name": "dsh-jump-top",
+  "version": "0.1.4",
+  "description": "One click to the very top of a DSH conversation: load every earlier page first, then stay at the top.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./client": "./lib/client.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "conversation",
+    "scroll"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xxxiii/dsh-jump-top.git"
+  },
+  "homepage": "https://github.com/xxxiii/dsh-jump-top#readme",
+  "bugs": {
+    "url": "https://github.com/xxxiii/dsh-jump-top/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "inject": []
+    },
+    "compatibility": {
+      "dsh": ">=0.2.0-rc.1 <0.3.0-0"
+    }
+  }
+}
